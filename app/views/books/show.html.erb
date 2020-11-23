@@ -1,0 +1,17 @@
+<main>
+  <p id="notice">
+    <%= notice %>
+  </p>
+  <section class="singlebook">
+    <section class="book-box">
+     <h3 class="book-title">
+        <h2>Title:<%= @book.title %></h2>
+      </h3>
+      <p class="book-body">
+       <h4>Body:<%= @book.body %></h4>
+      </p>
+    </section>
+  </section>
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+  <a href="/books">Back</a>
+</main>
